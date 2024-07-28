@@ -1,0 +1,15 @@
+version: "1.2"
+
+services:
+  postgres:
+    image: postgres
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: review
+      POSTGRES_PASSWORD: password
+  redis:
+    image: redis
+    ports:
+      - '6479:6379'
